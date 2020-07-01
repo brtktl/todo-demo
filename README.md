@@ -8,5 +8,5 @@ Even tough I wanted to conteinerize all server,client and database environments,
 you the spring and docker images.<br>
 The configuration files i used are also included in the root of the repository.
 
-https://hub.docker.com/r/rhnbrtktl/spring-todo
+https://hub.docker.com/r/rhnbrtktl/spring-todo <br>
 https://hub.docker.com/r/rhnbrtktl/react-todo
