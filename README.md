@@ -1,6 +1,7 @@
 # todo-demo
 
-Spring Server can be run from intelliji IDE. It will auto download the dependencies. <br>
+Spring Server can be run from from any spring compatible ide. They will auto download the dependencies. <br>
+Unit tests are included in the tests subfolder.
 React Client can be run with npm install then npm start. <br>
 Server is configurated for a couchbase bucket named todo_app. It's username: database_user password:123456 <br>
 
