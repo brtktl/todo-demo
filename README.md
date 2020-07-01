@@ -6,7 +6,7 @@ Server is configurated for a couchbase bucket named todo_app. It's username: dat
 
 Even tough I wanted to conteinerize all server,client and database environments, connecting couchbase and spring application was became unsuccessful. Nonetheless I am delivering
 you the spring and docker images.<br>
-The configuration files i used are also included in the root of the repository.
+Docker configuration files i used are also included in the root of the repository.
 
 https://hub.docker.com/r/rhnbrtktl/spring-todo <br>
 https://hub.docker.com/r/rhnbrtktl/react-todo
