@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+    couchbase:
+        image: couchbase-todo
+        ports:
+            - 8091:8091
+            - 8092:8092
+            - 8093:8093
+        environment:
+            - COUCHBASE_ADMINISTRATOR_USERNAME=database_user
+            - COUCHBASE_ADMINISTRATOR_PASSWORD=123456
+            - COUCHBASE_BUCKET=todo_app
+            - COUCHBASE_BUCKET_PASSWORD=123456
+
+    spring-boot:
+        image: spring-todo
+        ports:
+            - 8080:8080
+        environment:
+            - COUCHBASE_HOST=couchbase
+            - COUCHBASE_BUCKET=todo_app
+            - COUCHBASE_BUCKET_PASSWORD=123456
+        restart: always
+
+    react-client:
+        image: react-todo
+        ports:
+            - 4200:80
+        restart: always
